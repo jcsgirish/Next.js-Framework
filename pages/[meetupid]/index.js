@@ -1,5 +1,5 @@
-import { Fragment } from "react"
-import MeetupDetails from "../../components/meetups/MeetupDetails"
+
+import MeetupDetails from "../../components/meetups/MeetupDetails";
 
 
 function MeetupDetail(){
@@ -13,14 +13,14 @@ function MeetupDetail(){
       
     )
 }
-export async function getStaticPaths (){
+export async function getStaticPaths (context){
     return {
 
         fallback : false ,
 
         paths : [
             {
-                params:{
+                params: {
                     meetupId:'m1',
                 },
             },
